@@ -1,5 +1,13 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix acl: <http://www.w3.org/ns/auth/acl#>.
+
+<#public>
+    a acl:Authorization;
+    acl:agentClass foaf:Agent;
+    acl:accessTo <./>;
+    acl:mode acl:Read, acl:Write, acl:Control;
+    acl:default <./>.
 
 <>
     a foaf:PersonalProfileDocument;
@@ -18,3 +26,4 @@
     foaf:knows <https://wiser-solid-xi.interactions.ics.unisg.ch/danai/profile/card#me> ;
     foaf:knows <https://wiser-solid-xi.interactions.ics.unisg.ch/andrej/profile/card#me> ;
     foaf:knows <https://wiser-solid-xi.interactions.ics.unisg.ch/marco/profile/card#me> .
+
