@@ -1,0 +1,20 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+
+<>
+    a foaf:PersonalProfileDocument;
+    foaf:maker <https://wiser-solid-xi.interactions.ics.unisg.ch/stephannef/profile/card#me>;
+    foaf:primaryTopic <https://wiser-solid-xi.interactions.ics.unisg.ch/stephannef/profile/card#me>;
+    foaf:mbox "stephan.nef@student.unisg.ch" .
+
+<https://wiser-solid-xi.interactions.ics.unisg.ch/stephannef/profile/card#me>
+    
+
+    solid:oidcIssuer <https://wiser-solid-xi.interactions.ics.unisg.ch/>;
+    a foaf:Person;
+    foaf:givenName "Stephan";
+    foaf:familyName "Nef";
+    foaf:mbox "stephan.nef@student.unisg.ch" ;
+    foaf:knows <https://wiser-solid-xi.interactions.ics.unisg.ch/danai/profile/card#me> ;
+    foaf:knows <https://wiser-solid-xi.interactions.ics.unisg.ch/andrej/profile/card#me> ;
+    foaf:knows <https://wiser-solid-xi.interactions.ics.unisg.ch/marco/profile/card#me> .
